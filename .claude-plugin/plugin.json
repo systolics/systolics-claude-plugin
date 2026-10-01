@@ -7,5 +7,11 @@
   "author": {
     "name": "systolics GmbH",
     "url": "https://systolics.de"
-  }
+  },
+  "homepage": "https://systolics.de",
+  "repository": "https://github.com/systolics/systolics-claude-plugin",
+  "documentationUrl": "https://github.com/systolics/systolics-claude-plugin/blob/main/README.md",
+  "supportUrl": "https://github.com/systolics/systolics-claude-plugin/blob/main/README.md#hilfe",
+  "privacyPolicyUrl": "https://systolics.de/dse",
+  "termsOfServiceUrl": "https://systolics.de/agb"
 }

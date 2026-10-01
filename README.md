@@ -48,6 +48,6 @@ Zusätzlich zu anonymisierten Analysedaten können die Kontext-Tools Organisatio
 
 Bei fehlenden Tools verbinden Sie systolics im Tab **Connectors** erneut. Bei fehlender Datenstruktur-Berechtigung autorisieren Sie die Verbindung neu und wählen **Datenstrukturen einsehen**. Fehlt diese Auswahl oder ist sie nicht freigegeben, prüfen Sie Ihre Organisation und Kontoberechtigungen mit dem zuständigen Administrator.
 
-Anbieter: [systolics GmbH](https://systolics.de/impressum/). Datenschutz: [systolics Datenschutzhinweise](https://systolics.de/datenschutz/). Kontakt: [hi@systolics.de](mailto:hi@systolics.de).
+Anbieter: [systolics GmbH](https://systolics.de/impressum/). Datenschutz: [systolics Datenschutzhinweise](https://systolics.de/dse). Kontakt: [hi@systolics.de](mailto:hi@systolics.de).
 
 Einrichtung und Plattformfunktionen: [Anthropic Plugin-Dokumentation](https://claude.com/docs/plugins/build).
