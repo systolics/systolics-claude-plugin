@@ -1,0 +1,11 @@
+{
+  "name": "systolics",
+  "displayName": "systolics",
+  "version": "1.0.0",
+  "license": "SEE LICENSE IN LICENSE",
+  "description": "Analysiere anonymisierte systolics-Daten, vergleiche Kennzahlen und erkläre Datenmodelle mit nachvollziehbaren Abfragen.",
+  "author": {
+    "name": "systolics GmbH",
+    "url": "https://systolics.de"
+  }
+}
