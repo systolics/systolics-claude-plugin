@@ -1,6 +1,6 @@
 # systolics
 
-![systolics](assets/icon.png)
+![systolics](assets/icon.svg)
 
 Das systolics-Plugin verbindet Claude mit den anonymisierten Analysedaten Ihrer Organisation. Der enthaltene Analytics-Skill unterstützt die Auswahl passender Modelle und Kennzahlen, nachvollziehbare Periodenvergleiche und die Erklärung von Berechnungen und Datenstrukturen. Die Kategorie ist Data & Analytics. Die Analysedaten sind bereits in systolics anonymisiert, bevor der MCP-Connector darauf zugreift.
 
