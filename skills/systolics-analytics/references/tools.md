@@ -9,9 +9,9 @@ Der systolics-MCP veröffentlicht die folgenden technischen Namen mit deutschen 
 | `get_cubes` | Analysemodelle auflisten | Modelle entdecken |
 | `get_cube_details` | Analysemodell anzeigen | Aktive Modelldefinition erklären |
 | `get_measures` | Kennzahlen auflisten | Kennzahlen und Aggregation prüfen |
-| `get_dimensions` | Dimensionen auflisten | Zeitdimensionen und Filter bestimmen |
-| `query_cube` | Aggregierte Kennzahlen abfragen | Daten für bestätigte Parameter lesen |
-| `get_cube_query_sql` | Abfrage-SQL anzeigen | SQL der gleichen Abfrage erzeugen |
+| `get_dimensions` | Dimensionen auflisten | Gruppierungen, Zeitdimensionen und Filter bestimmen |
+| `query_cube` | Cube-Daten abfragen | Kennzahlen, Aufteilungen, Zeitreihen und Ranglisten im Cube-Abfrageformat lesen |
+| `get_cube_query_sql` | Abfrage-SQL anzeigen | SQL der gleichen Abfrage gegen die Quelltabellen erzeugen |
 | `get_data_entities` | Datenstrukturen auflisten | Tabellen und Views entdecken |
 | `get_data_entity_details` | Datenstruktur anzeigen | Spalten und Definition einer Entität erklären |
 

@@ -2,7 +2,7 @@
 
 ![systolics](assets/icon.svg)
 
-Das systolics-Plugin verbindet Claude mit den anonymisierten Analysedaten Ihrer Organisation. Der enthaltene Analytics-Skill unterstützt die Auswahl passender Modelle und Kennzahlen, nachvollziehbare Periodenvergleiche und die Erklärung von Berechnungen und Datenstrukturen. Die Kategorie ist Data & Analytics. Die Analysedaten sind bereits in systolics anonymisiert, bevor der MCP-Connector darauf zugreift.
+Das systolics-Plugin verbindet Claude mit den anonymisierten Analysedaten Ihrer Organisation. Der enthaltene Analytics-Skill unterstützt die Auswahl passender Modelle und Kennzahlen, Aufteilungen, Zeitverläufe und Ranglisten, nachvollziehbare Periodenvergleiche und die Erklärung von Berechnungen und Datenstrukturen. Die Kategorie ist Data & Analytics. Die Analysedaten sind bereits in systolics anonymisiert, bevor der MCP-Connector darauf zugreift.
 
 ## Voraussetzungen
 
@@ -27,6 +27,8 @@ In Claude Code lässt sich der entpackte Plugin-Ordner mit `claude --plugin-dir 
 - „Welche Analysemodelle und Kennzahlen stehen mir zur Verfügung?“
 - „Welche Zeitdimension passt für diese Kennzahl zu meiner Frage?“
 - „Vergleiche die ausgewählte Kennzahl für das zweite und dritte Quartal 2026.“
+- „Zeige die Kennzahl für dieses Jahr als Monatsverlauf, aufgeteilt nach Fachgruppe.“
+- „Welche zehn Werte waren im laufenden Quartal am höchsten?“
 - „Wie wird die Kennzahl berechnet? Zeige auch das SQL der Abfrage.“
 - „Welche Datenstrukturen gibt es und welche Spalten enthält diese Tabelle?“
 
@@ -34,9 +36,9 @@ Claude verwendet den aktiven Modellkatalog und klärt wesentliche Mehrdeutigkeit
 
 ## Funktionen und Grenzen
 
-Die Tools liefern Organisations- und Benutzerkontext, Analysemodelle, Kennzahlen, Dimensionen, aggregierte Ergebnisse, Modelldefinitionen, erzeugtes Abfrage-SQL und Datenstruktur-Metadaten. Eine Datenabfrage verwendet ein Modell, ein bis fünf Kennzahlen, eine Zeitdimension und einen Zeitraum. Die Zeitzone ist Europe/Berlin.
+Die Tools liefern Organisations- und Benutzerkontext, Analysemodelle, Kennzahlen, Dimensionen, Abfrageergebnisse, Modelldefinitionen, erzeugtes Abfrage-SQL und Datenstruktur-Metadaten. Datenabfragen verwenden das Abfrageformat von Cube: beliebig viele Kennzahlen, Gruppierung nach Dimensionen, Zeitreihen mit wählbarer Granularität, Filter, Sortierung und seitenweises Abrufen, auch über verbundene Modelle hinweg. Ergebnisse sind Aggregate oder, wenn ausdrücklich angefragt, einzelne Zeilen eines Analysemodells. Die Zeitzone ist standardmäßig Europe/Berlin.
 
-Die Tools ändern keine Geschäftsdaten. Freie SQL-Ausführung, beliebige Gruppierungen und das Abrufen einzelner Rohdatensätze gehören nicht zum Funktionsumfang. Die Datenstruktur-Tools lesen Beschreibungen und Spalteninformationen. Verfügbare Metadaten können SQL-Ausdrücke und View-Definitionen enthalten.
+Die Tools ändern keine Geschäftsdaten. Jede Abfrage läuft über die semantischen Analysemodelle; freie SQL-Ausführung gehört nicht zum Funktionsumfang. Alle genannten Kennzahlen und Dimensionen werden vor der Ausführung gegen die für Sie sichtbaren Modelle geprüft. Die Datenstruktur-Tools lesen Beschreibungen und Spalteninformationen. Verfügbare Metadaten können SQL-Ausdrücke und View-Definitionen enthalten.
 
 ## Daten und Zugriff
 
